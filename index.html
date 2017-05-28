@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>canvas Drawing Tool</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="canvas.css" rel="stylesheet">
+    <script src="canvas.js"></script>
+</head>
+
+<body>
+<div class="container">
+<div>
+<div class="selector">
+    <p>
+    	<button class ="controls" id="line" type="submit" onclick=setShape(event)>Line</button>
+    	<button class ="controls" id="triangleRight" type="submit" onclick=setShape(event)>Right Triangle</button>
+    	<button class ="controls" id="triangleEqi" type="submit" onclick=setShape(event)>Equi Triangle</button>
+    	<button class ="controls" id="triangleIso" type="submit" onclick=setShape(event)>Iso Triangle</button>
+    	<input class ="controls" id="colorInput" type="text" placeholder="Enter Color.."/>
+    	<button class ="controls" id="fillBox" type="submit" onclick=setFill()>Fill Color</button>
+    	<a class ="controls download" id="download">Download Image</a>
+    	<button class ="controls" id="clear">Clear</button>
+    </p>
+</div>
+<canvas id="canvas" width="882" height="600"></canvas>
+</div>
+</div>
+
+</body>
+</html>
+
